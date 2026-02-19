@@ -24,8 +24,6 @@ header h1 {
 }
 
 /* NAVIGATION BAR */
-/* NAVIGATION BAR */
-/* NAVIGATION BAR */
 .navbar {
     background-color: #fff3e0;
     text-align: center;
@@ -47,7 +45,6 @@ header h1 {
 .navbar a:hover {
     opacity: 0.9;
 }
-
 
 
 /* MAIN CONTAINER */
@@ -79,55 +76,33 @@ footer {
     border-top: 3px solid #e4b48c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* Dropdown container to center */
-  .season-dropdown-container {
+/* Dropdown container to center */
+.season-dropdown-container {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-  }
+}
 
-  /* Dropdown styles */
-  select#season-select {
+/* Dropdown styles */
+select#season-select {
     background-color: #fff8ee;
     border: 2px solid #e4b48c;
     border-radius: 10px;
     padding: 6px 10px;
     cursor: pointer;
-  }
- 
-  
+}
 
-  /* Tiles container */
-    /* Tiles container */
-  .tiles-container {
+/* Tiles container */
+.tiles-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     gap: 30px; /* space between tiles */
     justify-items: center; /* center tiles in their grid cell */
-  }
+}
 
-  /* Tile style */
-  .tile {
+/* Tile style */
+.tile {
     background-color: #fff;
     border-radius: 15px;
     padding: 15px;
@@ -138,9 +113,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
- .special-tile {
+.special-tile {
     background-color: #fff;
     border-radius: 15px;
     padding: 15px;
@@ -151,39 +126,39 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
-  .tile img {
+.tile img {
     width: 50%;
     height: auto;
     align-self: center;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 12px;
-  }
+}
 
-   .special-tile img {
+.special-tile img {
     width: 100%;
     height: auto;
     align-self: center;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 12px;
-  }
+}
 
-  /* Tile texts */
-  .tile h3 {
+/* Tile texts */
+.tile h3 {
     margin: 0 0 6px;
     font-weight: bold;
     font-size: 1.1rem;
-  }
-  .tile p {
+}
+.tile p {
     margin: 3px 0;
     font-size: 0.9rem;
     line-height: 1.3;
-  }
+}
 
-  .category {
+.category {
     font-style: normal;    /* Removes italics */
     color: #000;           /* Sets text to black (or your standard dark color) */
     font-size: 1rem;       /* Standard size */
@@ -259,24 +234,130 @@ footer {
   }
 
 
+.login_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.login_main form {
+    text-align: center;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.form_element {
+    border: 1px solid #e4b48c;
+    background-color: #fff8ee;
+}
+
+.login {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: normal;
+    color: white;
+    background-color: #f28c8c;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.login:hover {
+    cursor: pointer;
+}
 
 
 
 
 
+.order_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.order_main img {
+    width: 300px;
+}
+
+.order_main form {
+    text-align: center;
+}
+
+.order_main form label{
+    font-weight: bold;
+}
+
+.order_main form button, .order_main form a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    background-color: #f28c8c;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    display: inline-block;
+    border-width: 0px;
+}
+
+.summary_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 40px auto;
+}
+.summary_main table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff8ee;
+    padding: 10px 15px;
+    text-align: left;
+    font-family: "Comic Sans MS";
+}
+
+.summary_main th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff8ee;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.summary_main td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff8ee;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+
+.summary_main a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #f28c8c;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 120px;
+}
 
 
 
 
-  /* Responsive adjustments */
-  @media (max-width: 900px) {
-    .tile {
-      width: calc(50% - 60px);
-    }
-  }
 
-  @media (max-width: 600px) {
-    .tile {
-      width: calc(100% - 40px);
-    }
-  }
