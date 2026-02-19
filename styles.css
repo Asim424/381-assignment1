@@ -94,38 +94,59 @@ select#season-select {
 
 /* Tiles container */
 .tiles-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    gap: 30px; /* space between tiles */
-    justify-items: center; /* center tiles in their grid cell */
+    display: block;        /* Ensure container is block-level */
+    text-align: left;    /* This centers the inline-block tiles */
+    font-size: 0;          /* Removes the physical space between tiles in the HTML */
 }
 
-/* Tile style */
 .tile {
+    display: inline-block; /* The switch from flex/grid */
+    vertical-align: top;   /* Keeps them aligned if content heights vary */
+    
+    /* Spacing */
+    margin: 15px;          /* Combined 15px margins create your 30px gap */
+    
+    /* Your existing styles */
+    width: 320px;
     background-color: #fff;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 320px;
     box-sizing: border-box;
-    display: flex;
+    
+    /* Keep your internal flex for content alignment */
+    display: inline-flex;  
     flex-direction: column;
     justify-content: space-between;
+    
+    /* Reset font-size so text appears again */
+    font-size: 16px;       
+    text-align: center;
 }
 
 .special-tile {
+    display: inline-block; /* The switch from flex/grid */
+    vertical-align: top;   /* Keeps them aligned if content heights vary */
+    
+    /* Spacing */
+    margin: 15px;          /* Combined 15px margins create your 30px gap */
+    
+    /* Your existing styles */
+    width: 160px;
     background-color: #fff;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 160px;
     box-sizing: border-box;
-    display: flex;
+    
+    /* Keep your internal flex for content alignment */
+    display: inline-flex;  
     flex-direction: column;
     justify-content: space-between;
+    
+    /* Reset font-size so text appears again */
+    font-size: 16px;       
+    text-align: center;
 }
 
 .tile img {
